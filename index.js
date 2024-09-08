@@ -6,9 +6,10 @@ const PORT = process.env.PORT || 4000
 // body parser
 app.use(express.json());
 // route add
-const todoRoute = require("./routes/route")
+// const todoRoute = require("./todoApp/routes/route")
+const blogRoutes =require("./blogApp/routes/route")
 
-app.use("/api/v1",todoRoute)
+app.use("/api/v1",blogRoutes)
 // app start
 app.listen(3000,()=>{
     console.log("app is at port no")

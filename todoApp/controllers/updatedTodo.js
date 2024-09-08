@@ -1,5 +1,4 @@
 const Todo = require("../models/todo");
-
 exports.updateTodo = async(req,res)=>{
     try {
         const id =req.params.id

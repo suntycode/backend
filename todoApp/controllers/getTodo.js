@@ -1,5 +1,4 @@
 const Todo = require("../models/todo");
-
 exports.getTodo = async(req,res)=>{
     try {
        
